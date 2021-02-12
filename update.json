@@ -1,0 +1,48 @@
+{
+  "updates": [
+    {
+      "date": "12/05/2018",
+      "summary": "Resources",
+      "details": [
+        "Added some resources to the Note section in the Learn Python Basics page."
+      ]
+    },
+    {
+      "date": "11/29/2018",
+      "summary": "Ajax",
+      "details": [
+        "Added update.json file that contains update information.",
+        "Added updates section in Home page that displays data from the update.json file.",
+        "Added images from Flickr to the Learn Python Basics page that act as links to other websites.",
+        "Moved Note section into the accordion widget in the Learn Python Basics page.",
+        "Added one practice problem to Practice page."
+      ]
+    },
+    {
+      "date": "11/16/2018",
+      "summary": "Interactivity",
+      "details": [
+        "Implemented accordion to Learn Python Basics page.",
+        "Implemented tooltip to Feedback page.",
+        "Added function that allows user to choose a practice problem in Practice page.",
+        "Added one practice problem to Practice page."
+      ]
+    },
+    {
+      "date": "09/28/2018",
+      "summary": "Initial Design",
+      "details": [
+        "Added header, main, and footer.",
+        "Added navigation bar.",
+        "Added content to Home page, Learn Python Basics page, and Feedback page."
+      ]
+    },
+    {
+      "date": "09/14/2018",
+      "summary": "Website Created",
+      "details": [
+        "Added a Home page, Practice page, Learn Python Basics page, and Feedback page."
+      ]
+    }
+  ]
+}

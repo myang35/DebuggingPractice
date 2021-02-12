@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn Python Basics | Debugging Practices</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="plugins.js"></script>
+    <script src="ajax.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <h1>Debugging Practices</h1>
+        <h2 id="with_python">with Python</h2>
+    </header>
+
+    <!-- navigation bar -->
+    <ul id="navigation">
+        <li><a href="index.html" id="first_tab">Home</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="learn.html">Learn Python Basics</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <!-- main -->
+    <div id="main">
+        <div id="learn-accordion">
+            <h3>Note:</h3>
+            <div>
+                <p>
+                    This is intended for anyone who is already familiar with programming and
+                    only needs to understand some python syntax. If you want full tutorials
+                    on Python, here are links to some resources:
+                </p>
+                <div id="tutorial-links"></div>
+                <div id="book-links"></div>
+            </div>
+            <!-- printing -->
+            <h3>Printing a Message</h3>
+            <div>
+                <h2>Use print() function</h2>
+                <p>
+                    print("Hello, world!") <br>
+                    &emsp; --> Hello, world!
+                </p>
+                <p>
+                    print("Hello", "world!") <br>
+                    &emsp; --> Hello world!
+                </p>
+                <p>
+                    print("Hello", 23) <br>
+                    &emsp; --> Hello 23
+                </p>
+            </div>
+
+            <!-- comments -->
+            <h3>Comments</h3>
+            <div>
+                <h2>Use # for comments</h2>
+                <p># This is a comment</p>
+                <p>myString = "This side is not a comment" &emsp; # This side is a comment</p>
+                <p>myString = "# This is not a comment because it's inside quotes. So it is a string."</p>
+            </div>
+
+            <!-- variables -->
+            <h3>Variables</h3>
+            <div>
+                <h2>Variables do not need a declaration.</h2>
+                <p>
+                    myVar = 5 <br>
+                    print(myVar) <br>&emsp; --> 5
+                </p>
+                <h2>Variables can change type.</h2>
+                <p>
+                    myVar = 10 <br>
+                    myVar = True <br>
+                    myVar = "Hello" <br>
+                    print(myVar) <br>
+                    &emsp; --> "Hello"
+                </p>
+                <h2>
+                    Variable names can only contain letters(A-z), numbers(0-9), and underscores( _ ) <br>
+                    and they cannot start with a number.
+                </h2>
+                <p>
+                    5myVar = 5 <br>
+                    &emsp; --> Error
+                </p>
+                <p>
+                    myVar$ = 8 <br>
+                    &emsp; --> Error
+                </p>
+                <p>
+                    my_Var5 = 10 <br>
+                    print(my_Var5) <br>
+                    &emsp; --> 10
+                </p>
+            </div>
+
+            <!-- if statements -->
+            <h3>If statements</h3>
+            <div>
+                <h2>Whether if a line is in the if statement depends on indentation</h2>
+                <p>
+                    if 5 > 2: <br>
+                    &emsp; print("I am inside the if statement") <br>
+                    &emsp; print("I am still inside the if statement") <br>
+                    print("I am not inside the if statement") <br>
+                    <br>
+                    &emsp; --> I am inside the if statement <br>
+                    &emsp; --> I am still inside the if statement <br>
+                    &emsp; --> I am not inside the if statement
+                </p>
+                <p>
+                    if 5 > 8: <br>
+                    &emsp; print("I am inside the if statement") <br>
+                    &emsp; print("I am still inside the if statement") <br>
+                    print("I am not inside the if statement") <br>
+                    <br>
+                    &emsp; --> I am not inside the if statement
+                </p>
+                <h2>Use elif for else-if</h2>
+                <p>
+                    score = 88 <br>
+                    if score >= 90: <br>
+                    &emsp; print("A") <br>
+                    elif score >= 80: <br>
+                    &emsp; print("B") <br>
+                    elif score >= 70: <br>
+                    &emsp; print("C") <br>
+                    elif score >= 60: <br>
+                    &emsp; print("D") <br>
+                    else: <br>
+                    &emsp; print("F") <br>
+                    <br>
+                    &emsp; --> B
+                </p>
+            </div>
+
+            <!-- loops -->
+            <h3>Loops</h3>
+            <div>
+                <h2>while loops</h2>
+                <p>
+                    i = 1 <br>
+                    while i &lt; 6: <br>
+                    &emsp; print(i) <br>
+                    &emsp; i += 1 <br>
+                    print("Done") <br>
+                    <br>
+                    &emsp; --> 1 <br>
+                    &emsp; --> 2 <br>
+                    &emsp; --> 3 <br>
+                    &emsp; --> 4 <br>
+                    &emsp; --> 5 <br>
+                    &emsp; --> Done
+                </p>
+                <h2>for loops</h2>
+                <p>
+                    food = ["hamburger", "pizza", "hotdog"] <br>
+                    for x in food: <br>
+                    &emsp; print(x) <br>
+                    <br>
+                    &emsp; --> hamburger <br>
+                    &emsp; --> pizza <br>
+                    &emsp; --> hotdog
+                </p>
+                <p>
+                    for x in range(5): <br>
+                    &emsp; print(x) <br>
+                    <br>
+                    &emsp; --> 0 <br>
+                    &emsp; --> 1 <br>
+                    &emsp; --> 2 <br>
+                    &emsp; --> 3 <br>
+                    &emsp; --> 4 <br>
+                </p>
+                <p>
+                    for x in range(2, 6): <br>
+                    &emsp; print(x) <br>
+                    <br>
+                    &emsp; --> 2 <br>
+                    &emsp; --> 3 <br>
+                    &emsp; --> 4 <br>
+                    &emsp; --> 5
+                </p>
+            </div>
+
+            <!-- methods -->
+            <h3>Methods</h3>
+            <div>
+                <p>
+                    def sum(x, y): <br>
+                    &emsp; result = x + y <br>
+                    &emsp; return result <br>
+                    print(sum(10, 8)) <br>
+                    &emsp; --> 18
+                </p>
+            </div>
+
+            <!-- classes -->
+            <h3>Classes</h3>
+            <div>
+                <p>
+                    class Person: <br>
+                    &emsp; def __init__(self, name, age): <br>
+                    &emsp; &emsp; self.name = name <br>
+                    &emsp; &emsp; self.age = age <br>
+                    <br>
+                    &emsp; def sayHello(self) <br>
+                    &emsp; &emsp; print("Hello, I am", self.name) <br>
+                    <br>
+                    myPerson = Person("Bob", 22) <br>
+                    <br>
+                    print(myPerson.name) <br>
+                    print(myPerson.age) <br>
+                    myPerson.sayHello() <br>
+                    <br>
+                    &emsp; --> Bob <br>
+                    &emsp; --> 22 <br>
+                    &emsp; --> Hello, I am Bob
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <br/>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>
